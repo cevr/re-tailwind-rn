@@ -1,0 +1,31 @@
+{
+  "name": "re-tailwind-rn",
+  "version": "0.0.0",
+  "keywords": [
+    "ReScript",
+    "tailwind",
+    "react-native",
+    "react",
+    "bucklescript"
+  ],
+  "author": "cvr",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reasonml-community/bs-fetch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reasonml-community/bs-fetch/issues"
+  },
+  "homepage": "https://github.com/reasonml-community/bs-fetch#readme",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "devDependencies": {
+    "bs-platform": "^8.3.0",
+    "reason-react": "^0.9.1",
+    "reason-react-native": "^0.62.3"
+  }
+}
