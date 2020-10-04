@@ -5,7 +5,7 @@ Rescript bindings for [rn-tailwind](https://github.com/vadimdemedes/tailwind-rn)
 ## Install
 
 ```bash
-npm install re-tailwind-rn
+npm install tailwind-rn re-tailwind-rn
 ```
 
 ## bsconfig.json
