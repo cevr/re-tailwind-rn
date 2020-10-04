@@ -1,16 +1,18 @@
 # re-tailwind-rn
 
+Rescript bindings for [rn-tailwind](https://github.com/vadimdemedes/tailwind-rn)
+
 ## Install
 
 ```bash
-npm install re-tailwind-rn
+npm install tailwind-rn re-tailwind-rn
 ```
 
 ## bsconfig.json
 
-```json
+```
 {
-  ...,
+  ...
   "bs-dependencies": ["reason-react-native", "reason-react", "re-tailwind-rn"]
 }
 ```
@@ -19,7 +21,7 @@ npm install re-tailwind-rn
 
 Use the `Tw` module
 
-```reasonml
+```reason
 open ReactNative;
 
 [@react.component]
@@ -37,7 +39,7 @@ let make = () =>
 
 ## Usage with [custom config](https://github.com/vadimdemedes/tailwind-rn#customization)
 
-```reasonml
+```reason
 open ReactNative;
 
 [@module "./styles.json"] external stylesConfig: Js.Json.t = "default"
@@ -59,7 +61,7 @@ let make = () =>
 
 ### Recommended to use with [re-classnames](https://github.com/MinimaHQ/re-classnames)
 
-```reasonml
+```reason
 open ReactNative;
 
 module Tw = {
@@ -96,19 +98,19 @@ let make = (~todo, ~completed) => {
 
 ### make
 
-```reasonml
+```reason
 type make = string => ReactNative.Style.t;
 ```
 
 ### color
 
-```reasonml
+```reason
 type color = string => string;
 ```
 
 ### create
 
-```reasonml
+```reason
 type created = {
   [@as "tailwind"]
   make,
@@ -117,16 +119,4 @@ type created = {
 };
 
 type create = Js.Json.t => created;
-```
-
-### makeWith
-
-```reasonml
-type makeWith = (t, string) => ReactNative.Style.t;
-```
-
-### colorWith
-
-```reasonml
-type colorWith = (t, string) => string;
 ```
