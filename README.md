@@ -1,5 +1,7 @@
 # re-tailwind-rn
 
+Rescript bindings for [rn-tailwind](https://github.com/vadimdemedes/tailwind-rn)
+
 ## Install
 
 ```bash
