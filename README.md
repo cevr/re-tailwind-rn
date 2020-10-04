@@ -64,11 +64,6 @@ let make = () =>
 ```reason
 open ReactNative;
 
-module Tw = {
-  include Tw;
-  include Cn;
-}
-
 type styles = {
   container: Style.t,
   text: Style.t,
@@ -86,7 +81,7 @@ let make = (~todo, ~completed) => {
     <Text
       style={Style.array([|
         styles.text,
-        Tw.(make("line-through"->on(completed))),
+        Tw.(make("line-through"->Cn.on(completed))),
       |])}>
       todo->React.string
     </Text>
