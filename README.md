@@ -12,7 +12,7 @@ npm install tailwind-rn re-tailwind-rn
 
 ```json
 {
-  ...,
+  ...
   "bs-dependencies": ["reason-react-native", "reason-react", "re-tailwind-rn"]
 }
 ```
